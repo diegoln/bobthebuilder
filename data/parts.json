@@ -1,0 +1,61 @@
+{
+  "_comment": "Seed catalog of the Technic parts the module library uses. LDraw ids are the standard ones; geometry is in studs/teeth/mm. Extend as modules need more parts.",
+  "parts": [
+    {"ldraw_id": "95646c01", "name": "EV3 Intelligent Brick", "kind": "brick"},
+    {"ldraw_id": "95658c01", "name": "EV3 Large Motor", "kind": "motor_large"},
+    {"ldraw_id": "99455c01", "name": "EV3 Medium Motor", "kind": "motor_medium"},
+    {"ldraw_id": "95650c01", "name": "EV3 Color Sensor", "kind": "sensor_color"},
+    {"ldraw_id": "95648c01", "name": "EV3 Touch Sensor", "kind": "sensor_touch"},
+    {"ldraw_id": "95654c01", "name": "EV3 Infrared Sensor", "kind": "sensor_ir"},
+    {"ldraw_id": "95652c01", "name": "EV3 Ultrasonic Sensor", "kind": "sensor_ultrasonic"},
+    {"ldraw_id": "99380c01", "name": "EV3 Gyro Sensor", "kind": "sensor_gyro"},
+
+    {"ldraw_id": "32523", "name": "Technic Beam 3", "kind": "beam", "length": 3, "holes": 3},
+    {"ldraw_id": "32316", "name": "Technic Beam 5", "kind": "beam", "length": 5, "holes": 5},
+    {"ldraw_id": "32524", "name": "Technic Beam 7", "kind": "beam", "length": 7, "holes": 7},
+    {"ldraw_id": "40490", "name": "Technic Beam 9", "kind": "beam", "length": 9, "holes": 9},
+    {"ldraw_id": "32525", "name": "Technic Beam 11", "kind": "beam", "length": 11, "holes": 11},
+    {"ldraw_id": "41239", "name": "Technic Beam 13", "kind": "beam", "length": 13, "holes": 13},
+    {"ldraw_id": "32278", "name": "Technic Beam 15", "kind": "beam", "length": 15, "holes": 15},
+    {"ldraw_id": "32526", "name": "Technic Beam 3x5 L-shape", "kind": "beam_angled", "holes": 7},
+    {"ldraw_id": "32140", "name": "Technic Beam 2x4 L-shape", "kind": "beam_angled", "holes": 5},
+
+    {"ldraw_id": "2780", "name": "Technic Pin with Friction", "kind": "pin", "length": 2},
+    {"ldraw_id": "6558", "name": "Technic Pin Long with Friction", "kind": "pin", "length": 3},
+    {"ldraw_id": "3673", "name": "Technic Pin (frictionless)", "kind": "pin", "length": 2},
+    {"ldraw_id": "43093", "name": "Technic Axle Pin with Friction", "kind": "axle_pin", "length": 2},
+    {"ldraw_id": "32054", "name": "Technic Pin Long with Stop Bush", "kind": "pin", "length": 3},
+
+    {"ldraw_id": "32062", "name": "Technic Axle 2 Notched", "kind": "axle", "length": 2},
+    {"ldraw_id": "4519", "name": "Technic Axle 3", "kind": "axle", "length": 3},
+    {"ldraw_id": "3705", "name": "Technic Axle 4", "kind": "axle", "length": 4},
+    {"ldraw_id": "32073", "name": "Technic Axle 5", "kind": "axle", "length": 5},
+    {"ldraw_id": "3706", "name": "Technic Axle 6", "kind": "axle", "length": 6},
+    {"ldraw_id": "44294", "name": "Technic Axle 7", "kind": "axle", "length": 7},
+    {"ldraw_id": "3707", "name": "Technic Axle 8", "kind": "axle", "length": 8},
+
+    {"ldraw_id": "6536", "name": "Technic Axle and Pin Connector Perpendicular", "kind": "connector", "holes": 1},
+    {"ldraw_id": "32039", "name": "Technic Axle Connector with Axle Hole", "kind": "connector"},
+    {"ldraw_id": "32013", "name": "Technic Angle Connector #1", "kind": "connector"},
+    {"ldraw_id": "32034", "name": "Technic Angle Connector #2 (180°)", "kind": "connector"},
+    {"ldraw_id": "32291", "name": "Technic Axle Connector Double Perpendicular", "kind": "connector"},
+    {"ldraw_id": "32123b", "name": "Technic Bush 1/2", "kind": "connector"},
+    {"ldraw_id": "3713", "name": "Technic Bush", "kind": "connector"},
+
+    {"ldraw_id": "3647", "name": "Technic Gear 8 Tooth", "kind": "gear", "teeth": 8},
+    {"ldraw_id": "32270", "name": "Technic Gear 12 Tooth Double Bevel", "kind": "gear", "teeth": 12},
+    {"ldraw_id": "32269", "name": "Technic Gear 20 Tooth Double Bevel", "kind": "gear", "teeth": 20},
+    {"ldraw_id": "3648", "name": "Technic Gear 24 Tooth", "kind": "gear", "teeth": 24},
+    {"ldraw_id": "32498", "name": "Technic Gear 36 Tooth Double Bevel", "kind": "gear", "teeth": 36},
+    {"ldraw_id": "4716", "name": "Technic Worm Gear", "kind": "gear_worm", "teeth": 1},
+
+    {"ldraw_id": "56145c02", "name": "Wheel 43.2mm D. x 26mm with Tire", "kind": "wheel", "diameter_mm": 43.2, "width_mm": 26},
+    {"ldraw_id": "56908c01", "name": "Wheel 30.4mm D. x 20mm with Tire", "kind": "wheel", "diameter_mm": 30.4, "width_mm": 20},
+    {"ldraw_id": "32474", "name": "Technic Ball Joint (caster ball)", "kind": "ball_caster"},
+    {"ldraw_id": "92911", "name": "Technic Steering Ball Socket", "kind": "ball_caster"},
+
+    {"ldraw_id": "ev3cable25", "name": "EV3 Cable 25 cm", "kind": "cable", "length": 25},
+    {"ldraw_id": "ev3cable35", "name": "EV3 Cable 35 cm", "kind": "cable", "length": 35},
+    {"ldraw_id": "ev3cable50", "name": "EV3 Cable 50 cm", "kind": "cable", "length": 50}
+  ]
+}

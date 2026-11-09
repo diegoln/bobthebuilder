@@ -1,0 +1,60 @@
+{
+  "id": "31313",
+  "name": "LEGO MINDSTORMS EV3 (retail, 31313)",
+  "source": "SEED — approximate counts from memory of the 31313 inventory. Verify against Rebrickable (set 31313-1) before trusting the inventory validator for a real build.",
+  "lines": [
+    {"ldraw_id": "95646c01", "qty": 1},
+    {"ldraw_id": "95658c01", "qty": 2},
+    {"ldraw_id": "99455c01", "qty": 1},
+    {"ldraw_id": "95650c01", "qty": 1},
+    {"ldraw_id": "95648c01", "qty": 1},
+    {"ldraw_id": "95654c01", "qty": 1},
+    {"ldraw_id": "ev3cable25", "qty": 4},
+    {"ldraw_id": "ev3cable35", "qty": 2},
+    {"ldraw_id": "ev3cable50", "qty": 1},
+
+    {"ldraw_id": "32523", "qty": 8},
+    {"ldraw_id": "32316", "qty": 10},
+    {"ldraw_id": "32524", "qty": 8},
+    {"ldraw_id": "40490", "qty": 6},
+    {"ldraw_id": "32525", "qty": 4},
+    {"ldraw_id": "41239", "qty": 4},
+    {"ldraw_id": "32278", "qty": 2},
+    {"ldraw_id": "32526", "qty": 6},
+    {"ldraw_id": "32140", "qty": 4},
+
+    {"ldraw_id": "2780", "qty": 60},
+    {"ldraw_id": "6558", "qty": 20},
+    {"ldraw_id": "3673", "qty": 6},
+    {"ldraw_id": "43093", "qty": 12},
+    {"ldraw_id": "32054", "qty": 6},
+
+    {"ldraw_id": "32062", "qty": 4},
+    {"ldraw_id": "4519", "qty": 6},
+    {"ldraw_id": "3705", "qty": 4},
+    {"ldraw_id": "32073", "qty": 4},
+    {"ldraw_id": "3706", "qty": 2},
+    {"ldraw_id": "44294", "qty": 2},
+    {"ldraw_id": "3707", "qty": 2},
+
+    {"ldraw_id": "6536", "qty": 6},
+    {"ldraw_id": "32039", "qty": 4},
+    {"ldraw_id": "32013", "qty": 4},
+    {"ldraw_id": "32034", "qty": 4},
+    {"ldraw_id": "32291", "qty": 4},
+    {"ldraw_id": "32123b", "qty": 10},
+    {"ldraw_id": "3713", "qty": 6},
+
+    {"ldraw_id": "3647", "qty": 0},
+    {"ldraw_id": "32270", "qty": 4},
+    {"ldraw_id": "32269", "qty": 2},
+    {"ldraw_id": "3648", "qty": 0},
+    {"ldraw_id": "32498", "qty": 2},
+    {"ldraw_id": "4716", "qty": 1},
+
+    {"ldraw_id": "56145c02", "qty": 2},
+    {"ldraw_id": "56908c01", "qty": 0},
+    {"ldraw_id": "32474", "qty": 1},
+    {"ldraw_id": "92911", "qty": 1}
+  ]
+}

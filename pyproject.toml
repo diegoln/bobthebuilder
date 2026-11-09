@@ -8,8 +8,17 @@ dependencies = [
     "pydantic>=2.7",
 ]
 
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+
+[project.scripts]
+bob = "bobthebuilder.cli:main"
+
 [dependency-groups]
 dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [build-system]
 requires = ["hatchling"]

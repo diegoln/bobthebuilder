@@ -36,17 +36,51 @@ See [docs/architecture.md](docs/architecture.md).
 ```
 src/bobthebuilder/
   spec.py          # RobotSpec: the single source of truth for design + code
-  inventory/       # kit part lists (LDraw IDs + counts)
+  loop.py          # the design loop, trace and lessons
+  proposers.py     # ScriptedProposer (tests) and ClaudeProposer (API)
+  cli.py           # `bob` command
+  inventory/       # parts catalog + kit inventories (LDraw IDs, geometry, counts)
   modules/         # parametric, pre-validated sub-assemblies
   validators/      # deterministic checks returning actionable errors
-  codegen/         # Pybricks program generation from a RobotSpec
-data/inventories/  # kit inventory files
+  codegen/         # Pybricks program generation from a ResolvedSpec
+data/parts.json    # parts catalog (geometry per part)
+data/inventories/  # kit inventories (counts per part) — 31313 is a SEED, verify it
 tests/
 ```
 
-## Development
+## The design loop
+
+```
+task ──► Proposer ──► RobotSpec ──► validate ──► clean? ──► spec + code + BOM
+             ▲                         │
+             └──── errors (+ lessons) ─┘
+```
+
+Two feedback loops at different speeds:
+
+- **Inner (seconds):** the proposer gets the validator errors for its last
+  attempt — each with a code, the offending module and a fix hint — and
+  tries again, up to `max_iters`.
+- **Outer (across runs):** every attempt is appended to `.bob/trace.jsonl`.
+  `Lessons` counts which hints keep firing and prepends the top ones to the
+  next run's prompt, so recurring mistakes get fixed before the first attempt.
+
+Validators today: ports (missing / wrong kind / conflict), attachments
+(single root, socket kind, load, crowding), inventory against the kit, gear
+mesh distance `(t1+t2)/32` studs and whether that distance is buildable on a
+beam grid, lift torque vs payload, drive speed sanity, and task coverage.
+
+## Usage
 
 ```bash
 uv sync
 uv run pytest
+
+uv run bob library                       # what the proposer can pick from
+uv run bob validate spec.json            # run validators on a hand-written spec
+ANTHROPIC_API_KEY=... uv run bob design "follow a black line" --out out/
+uv run bob lessons                       # what the trace has taught so far
 ```
+
+`bob design` writes `spec.json`, `main.py` (Pybricks, ports and geometry
+wired from the design) and `bom.json`.
